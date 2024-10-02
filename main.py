@@ -85,7 +85,7 @@ validLoader = torch.utils.data.DataLoader(validFolder,
 if args.convlstm:
     encoder_params = convlstm_encoder_params
     decoder_params = convlstm_decoder_params
-if args.convgru:
+elif args.convgru:
     encoder_params = convgru_encoder_params
     decoder_params = convgru_decoder_params
 else:
